@@ -5,6 +5,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,5 +32,11 @@ public class MainActivity extends AppCompatActivity {
         mTab = findViewById(R.id.main_tab);
         mTab.setupWithViewPager(myViewPager);
 
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return super.onCreateOptionsMenu(menu);
     }
 }
