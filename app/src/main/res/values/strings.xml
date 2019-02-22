@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Private Chat</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_preference">Walkthrough</string>
+    <string name="my_preference_key">my_preference_key</string>
+</resources>

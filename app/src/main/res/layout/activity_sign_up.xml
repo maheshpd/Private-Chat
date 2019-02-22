@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:scrollbars="none"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/dismiss"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+        <TextView
+            android:id="@+id/register_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="REGISTERATION"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"
+            android:layout_below="@+id/register_text1"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/edt_bg"
+            android:hint="First Name"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"
+            android:layout_below="@+id/first_name"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/edt_bg"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"
+            android:layout_below="@+id/last_name"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/edt_bg"
+            android:hint="Nickname"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"
+            android:layout_below="@+id/nickname"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/edt_bg"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"
+            android:layout_below="@+id/email"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/edt_bg"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height"
+            android:layout_below="@+id/password"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/edt_bg"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:lines="1"
+            android:paddingStart="15dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phone"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_design"
+            android:fontFamily="@font/lato_medium"
+            android:onClick="ConfirmBtn"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

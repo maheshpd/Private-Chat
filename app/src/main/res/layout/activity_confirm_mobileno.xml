@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:scrollbars="none"
+    tools:context=".ConfirmMobileno">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/confirm_cancel"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+        <TextView
+            android:id="@+id/confir_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="CONFIRM MOBILE"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:id="@+id/edt_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confir_text"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edt1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/edt_bg"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLength="1"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edt2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/edt_bg"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edt3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/edt_bg"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edt4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/edt_bg"
+                android:gravity="center"
+                android:lines="1"
+                android:maxLines="1"
+                android:text="0"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resent_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_linear"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="55dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="We sent you code to SMS. Please tap Resend if you not get within"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/count_down_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/resent_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="40 Sec"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/count_down_time"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_design"
+            android:fontFamily="@font/lato_semibold"
+            android:onClick="ConfirmBtn"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</ScrollView>
