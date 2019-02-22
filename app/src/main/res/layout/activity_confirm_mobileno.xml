@@ -47,9 +47,9 @@
                 android:background="@color/edt_bg"
                 android:gravity="center"
                 android:lines="1"
+                android:inputType="number"
                 android:maxLength="1"
                 android:maxLines="1"
-                android:text="0"
                 android:textColor="@android:color/white" />
 
             <EditText
@@ -58,10 +58,11 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="8dp"
                 android:background="@color/edt_bg"
+                android:inputType="number"
                 android:gravity="center"
                 android:lines="1"
                 android:maxLines="1"
-                android:text="0"
+                android:maxLength="1"
                 android:textColor="@android:color/white" />
 
             <EditText
@@ -69,11 +70,12 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="8dp"
+                android:inputType="number"
                 android:background="@color/edt_bg"
                 android:gravity="center"
                 android:lines="1"
                 android:maxLines="1"
-                android:text="0"
+                android:maxLength="1"
                 android:textColor="@android:color/white" />
 
             <EditText
@@ -81,11 +83,12 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="8dp"
+                android:inputType="number"
                 android:background="@color/edt_bg"
                 android:gravity="center"
                 android:lines="1"
                 android:maxLines="1"
-                android:text="0"
+                android:maxLength="1"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>
